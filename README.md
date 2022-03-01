@@ -1,6 +1,6 @@
 ## WeatherWeb
 
-A simple weather website to see live weather of locations using OpenWeatherAPI
+A simple weather website to see live weather of locations using OpenWeatherMap API
 
 ##### To run
 
