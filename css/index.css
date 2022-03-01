@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url("/fonts/Ubuntu-Light.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+    color: white;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/ClearD.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.menu{
+    display: none;
+}
+
+.mainBody{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Left Card*/
+.leftCard{
+    height: 90%;
+    width: 54%;
+    margin:1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftTopText{
+    margin-left: 10%;
+}
+.leftTopText h3{
+    font-weight: 550;
+    font-size: 1.5rem;
+}
+
+.leftBottomText{
+    margin-left: 10%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.leftBottomText .infoText{
+    margin-left: 20px;
+}
+.leftBottomText .infoPlace{
+    display: inline-block;
+}
+.leftBottomText .infoSymbol{
+    display: inline-block;
+    margin:15px;
+}
+.leftBottomText .infoSymbol #infoLogo{
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.leftBottomText .infoSymbol h6{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 250;
+}
+
+.leftBottomText #tempText{
+    font-size: 10rem;
+    font-weight: 700;
+}
+.leftBottomText #placeText{
+    font-size: 3rem;
+}
+.leftBottomText #timeText{
+    font-size: 1.8rem;
+}
+
+
+/* Right Card*/
+.rightCard{
+    height: 90%;
+    width: 44%;
+    margin: 1%;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightCard .rightTop{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightCard .rightTop input{
+    width: 60%;
+    min-height: 50px;
+    background-color: rgba(255,255,255,0.15);
+    border: none;
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+}
+
+.rightCard .rightTop input::placeholder{
+    font-size: 1rem;
+    color: white;
+}
+
+.rightCard .rightTop ul{
+    list-style: none;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.rightCard li{
+    padding: 25px;
+    font-size: 1.2rem;
+}
+
+.rightCard li:hover{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+.rightBottom{
+    width: 100%;
+    height: 40%;
+}
+
+.rightBottom .row{
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 160px;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .measure{
+    font-size: 1.6rem;
+    margin: 8px;
+}
+
+.card .tag{
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:1200px) {
+    .leftTopText h3{
+        font-size: 1.2rem;
+    }
+    .leftBottomText #tempText{
+        font-size: 8rem;
+        font-weight: 600;
+    }
+    .leftBottomText #placeText{
+        font-size: 2.5rem;
+    }
+    .leftBottomText #timeText{
+        font-size: 1.4rem;
+    }
+    .rightCard input{
+        font-size: 0.8rem;
+    }
+    .rightCard input::placeholder{
+        font-size: 0.8rem;
+    }
+    .card .measure{
+        font-size: 1.4rem;
+    }
+    .card .tag{
+        font-size: 0.8rem;
+    }
+    .rightCard li{
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height:650px){
+    .rightCard li{
+        padding: 18px;
+        font-size: 1rem;
+    }
+    .rightCard .rightTop input{
+        min-height: 40px;
+    }
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width:850px)" href="/css/index.css">
+    <link rel="stylesheet" media="screen and (max-width:849px)" href="/css/indexMob.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div id="background"></div>
+
+    <div class="mainBody">
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="leftCard">
+            <div class="leftTopText">
+                <h3>"Keep Smiling!!"</h3>
+            </div>
+            <div class="leftBottomText">
+                <div id="tempText"><span id="currTemp"></span>&#176;C</div>
+                <div class="infoText">
+                    <div class="infoPlace">
+                        <div id="placeText" ></div>
+                        <div id="timeText" ></div>
+                    </div>
+                    <div class="infoSymbol">
+                        <img src="" id="infoLogo">
+                        <h6 id="wdesc">Clear</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rightCard">
+            <div class="rightTop">
+                <input type="text" placeholder="Search Places" id="searchBar">
+                <ul>
+                    <li id="firstSearchRes" class="searchRes"></li>
+                    <li id="secondSearchRes" class="searchRes"></li>
+                    <li id="thirdSearchRes" class="searchRes"></li>
+                    <li id="fourthSearchRes" class="searchRes"></li>
+                </ul>
+            </div>
+            <hr color="white" width="100%" >
+            <div class="rightBottom">
+                <div class="row">
+                    <div class="card">
+                        <div class="measure">
+                            <span id="currMaxTemp"></span>&#176;C
+                        </div>
+                        <div class="tag">
+                            Max Temp
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="measure">
+                            <span id="windSpeed"></span>m/s
+                        </div>
+                        <div class="tag">
+                            Wind Speed
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="measure" id="sunRise">
+                            05:22
+                        </div>
+                        <div class="tag">
+                            Sunrise
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="measure">
+                            <span id="currMinTemp"></span>&#176;C
+                        </div>
+                        <div class="tag">
+                            Min Temp
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="measure">
+                            <span id="humidity"></span>%
+                        </div>
+                        <div class="tag">
+                            Humidity
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="measure" id="sunSet">
+                            05:01
+                        </div>
+                        <div class="tag">
+                            Sunset
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/weatherApi.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
+
